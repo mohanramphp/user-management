@@ -15,5 +15,5 @@ npm start
 
 Credentials to login into the application 
 
-Username/password - admin/admin
+Username/password - admin/admin, 
 Username/password - user/user
