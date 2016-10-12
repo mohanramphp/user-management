@@ -3,7 +3,7 @@ User Management
 
 This application is a simple CRUD Application to manage Users with a simple ui authentication.
 
-Wrriten in ES6, Angular 2.0, Angular In memory Web Api and angular-seed (https://github.com/mgechev/angular-seed) is used as boiledplate.
+Wrriten in TypeScript, ES6 Standard, Angular 2.0, Angular In memory Web Api and angular-seed (https://github.com/mgechev/angular-seed) is used as boiledplate.
 
 Available Scripts
 --------------------
