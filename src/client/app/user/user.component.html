@@ -1,0 +1,32 @@
+<div class="container">
+    <p class="nav-bar">
+        <strong>Welcome, {{credential.name}}</strong>
+        <a class="btn btn-primary btn-md" [routerLink]="['/user-detail']">Add</a>
+        &nbsp;|&nbsp;
+        <a class="btn btn-primary btn-md" (click)="logout()">Logout</a>
+    </p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact #</th>
+                <th>Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.contact}}</td>
+                <td>{{user.address}}</td>
+                <th>
+                    <a class="btn btn-link" [routerLink]="['/user-detail', user.id]">Edit</a>
+                    &nbsp;|&nbsp;
+                    <button type="button" class="btn btn-link" (click)="deleteUser(user)">Delete</button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
