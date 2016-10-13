@@ -7,7 +7,6 @@ import { UserDetailComponent } from './user-detail.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule],
-  declarations: [UserComponent, UserDetailComponent],
-  exports: [UserComponent]
+  declarations: [UserComponent, UserDetailComponent]
 })
 export class UserModule { }

@@ -8,6 +8,7 @@ import { User, UserService } from '../core/index';
 	styleUrls: ['user-detail.component.css']
 })
 export class UserDetailComponent implements OnInit {
+	
 	user: User = new User();
 	
 	active: boolean = true;
@@ -35,6 +36,7 @@ export class UserDetailComponent implements OnInit {
 			})
 		}
 	}
+	
 	ngOnInit() {
 		this.activatedRoute.params.forEach((params: Params) => {
 			let id = (params['id']) ? +params['id']: null;
@@ -45,4 +47,5 @@ export class UserDetailComponent implements OnInit {
 			}
 		});
 	}
+	
 }

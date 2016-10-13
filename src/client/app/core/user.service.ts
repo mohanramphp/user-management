@@ -14,7 +14,7 @@ export class UserService {
 		//console.log(this.url);
 	}
 
-	getUsers(): Promise<any[]> {
+	getUsers(): Promise<User[]> {
 		return this.http.get(this.url)
 					.toPromise()
 					.then(response => response.json().data as User[])
@@ -30,7 +30,7 @@ export class UserService {
 		return this.http
 		.post(this.url, JSON.stringify(user), { headers: this.headers })
 		.toPromise()
-		.then(response => response.json().data)
+		.then(response => response.json().data as User)
 		.catch(this.handleError);		
 	}
 
